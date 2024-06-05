@@ -1,0 +1,129 @@
+@media screen and (min-width:1441px) {
+    .container-header {
+        max-width: 60%;
+        justify-content: space-around;
+    }
+
+    .wrapper {
+        background-size: 45%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    .header-logo {
+        margin-right: 30px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .wrapper {
+        background-size: 55%;
+    }
+
+    .header-info__name h1 {
+        font-size: 18px;
+    }
+
+    .header-info__post-info {
+        padding: 7px 0 9px;
+        font-size: 12px;
+    }
+
+    .header-info__date {
+        padding: 3px 6px 4px 6px;
+    }
+
+    .header-info__calender {
+        font-size: 14px;
+    }
+
+    .section-list__container {
+        margin: 0 40px 0 15px;
+    }
+
+    .section-list__date-like {
+        margin-right: 9px;
+    }
+
+    .section-list__today-like {
+        margin-right: 13px;
+    }
+
+    .section-list__today-like button,
+    .section-list__date-like button,
+    .section-list__date-comment button,
+    .section-list__today-comment button {
+        margin-right: 3px;
+    }
+
+    main{
+        padding-bottom: 40px;
+        background-size: 25%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .section-list__today-community, .section-list__date-community{
+        flex-direction: column;
+    }
+
+    .section-list__today-like ,
+    .section-list__date-like ,
+    .section-list__date-comment ,
+    .section-list__today-comment {
+        margin-bottom: 3px;
+    }
+
+    .section-list__container {
+        margin: 0 7px 0 7px;
+    }
+}
+
+@media screen and (max-width:430px) {
+
+
+    .wrapper {
+        background-size: 75%;
+    }
+
+    .header-info__name {
+        flex-direction: column;
+    }
+
+    .header-info__date {
+        width: fit-content;
+    }
+
+    .container-header {
+        padding-bottom: 15px;
+    }
+
+    .header-info__post-info-numb {
+        padding-right: 14px;
+    }
+
+    .section-list__container{
+        font-size: 12px;
+    }
+
+    .section-list__container {
+        margin: 0 2px 0 5px;
+    }
+
+}
