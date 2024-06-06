@@ -1,7 +1,10 @@
+
+
 @media screen and (min-width:1441px) {
     .container-header {
         max-width: 60%;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     .wrapper {
@@ -19,11 +22,56 @@
 
 
 
+
+@media screen and (max-width:810px) {
+    .wrap{
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    }
+    .wrap .section-list__item {
+        width: 34%;
+    }
+}
+
+
+@media screen and (max-width:630px) {
+    .header-info__calender{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+    }
+    .input-from{
+        margin: 4px 0;
+    }
+    .header-info__calender p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
 @media screen and (max-width:600px) {
 
     html,
     body {
         font-size: 14px;
+    }
+
+    .wrap{
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .wrap .section-list__item {
+        width:45%;
     }
 
     .header-logo {
@@ -80,7 +128,10 @@
 
 @media screen and (max-width:500px) {
     .section-list__today-community, .section-list__date-community{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .section-list__today-like ,
@@ -97,16 +148,30 @@
 
 @media screen and (max-width:430px) {
 
+    .wrap{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .wrap .section-list__item {
+        width:75%;
+    }
 
     .wrapper {
         background-size: 75%;
     }
 
     .header-info__name {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .header-info__date {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 
@@ -125,5 +190,7 @@
     .section-list__container {
         margin: 0 2px 0 5px;
     }
+
+   
 
 }
